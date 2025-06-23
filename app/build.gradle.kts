@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.application)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -40,4 +41,13 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation(platform("com.google.firebase:firebase-bom:33.15.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation ("com.google.firebase:firebase-auth")
+    implementation ("com.github.bumptech.glide:glide:4.14.2")
+    // 2. Bộ xử lý chú thích (Annotation Processor) để tối ưu hóa hiệu năng
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.14.2")
+
+    implementation ("com.google.android.material:material:1.11.0")
+
 }

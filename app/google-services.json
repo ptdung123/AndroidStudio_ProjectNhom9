@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "632901645808",
+    "project_id": "appthuvien-63c45",
+    "storage_bucket": "appthuvien-63c45.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632901645808:android:c220249781cb2b82c61935",
+        "android_client_info": {
+          "package_name": "vn.edu.tlu.nhom9.qltv"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1u8LaECSGEoM5PT5QYUZddl84MsSuMcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
