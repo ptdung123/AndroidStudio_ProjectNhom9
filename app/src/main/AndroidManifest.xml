@@ -29,5 +29,14 @@
             android:name=".view.activity.MainActivity"
             android:exported="false" />
 
+        <!-- ======================================================= -->
+        <!-- BẠN CẦN THÊM ĐOẠN NÀY VÀO -->
+        <activity
+            android:name=".view.activity.BookListActivity"
+            android:exported="false"
+            android:label="Quản Lý Sách"
+            android:parentActivityName=".view.activity.MainActivity" />
+        <!-- ======================================================= -->
+
     </application>
 </manifest>

@@ -1,7 +1,6 @@
-// ĐÂY LÀ ĐOẠN CODE ĐÚNG, KHỚP VỚI LAYOUT DASHBOARD MỚI
 package vn.edu.tlu.nhom9.qltv.view.activity;
-
 import android.content.Intent;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -22,17 +21,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Luôn kiểm tra trạng thái đăng nhập đầu tiên
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         if (currentUser == null) {
-            // Nếu chưa đăng nhập, không hiển thị layout này mà quay về Login ngay
             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
             finish();
-            return; // Dừng thực thi onCreate tại đây
+            return;
         }
 
-        // Chỉ khi đã xác nhận đăng nhập, mới set content view
         setContentView(R.layout.activity_main);
 
         mainController = new MainController();
@@ -61,13 +57,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.card_quan_ly_sach) {
-            mainController.navigateTo(this, getString(R.string.quan_ly_sach));
+            mainController.navigateToFeature(this, R.string.quan_ly_sach);
         } else if (id == R.id.card_quan_ly_phieu_muon) {
-            mainController.navigateTo(this, getString(R.string.quan_ly_phieu_muon));
+            mainController.navigateToFeature(this, R.string.quan_ly_phieu_muon);
         } else if (id == R.id.card_quan_ly_doc_gia) {
-            mainController.navigateTo(this, getString(R.string.quan_ly_doc_gia));
+            mainController.navigateToFeature(this, R.string.quan_ly_doc_gia);
         } else if (id == R.id.card_thong_ke) {
-            mainController.navigateTo(this, getString(R.string.thong_ke));
+            mainController.navigateToFeature(this, R.string.thong_ke);
         } else if (id == R.id.btn_logout) {
             mainController.handleLogout(this);
         }
