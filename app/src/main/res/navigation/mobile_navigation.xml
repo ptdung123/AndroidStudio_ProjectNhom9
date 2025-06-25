@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="vn.edu.tlu.nhom9.qltv.QuanlyvsThongke.Quanlysach.QuanlysachFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_sach" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="vn.edu.tlu.nhom9.qltv.QuanlyvsThongke.Quanlytheloaisach.QuanlytheloaiFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/frag_loaisach" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="vn.edu.tlu.nhom9.qltv.QuanlyvsThongke.Quanlithanhvien.QuanlithanhvienFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_quanlythanhvien" />
+    <fragment
+        android:id="@+id/nav_Quanlyphieu"
+        android:name="vn.edu.tlu.nhom9.qltv.QuanlyvsThongke.Phieumuon.PhieumuonFragment"
+        android:label="@string/menu_Phieu"
+        tools:layout="@layout/fragment_phieumuon" />
+    <fragment
+        android:id="@+id/nav_top10"
+        android:name="vn.edu.tlu.nhom9.qltv.QuanlyvsThongke.Thongketop10.Thongketo10Fragment"
+        android:label="Thống Kê Top 10"
+        tools:layout="@layout/fragment_thongketo10" />
+    <fragment
+        android:id="@+id/nav_tong"
+        android:name="vn.edu.tlu.nhom9.qltv.QuanlyvsThongke.DoanhThu.DoanhThuFragment"
+        android:label="Thống Kê Tổng"
+        tools:layout="@layout/fragment_thongkedoanhthu" />
+
+    <fragment
+        android:id="@+id/nav_admin"
+        android:name="vn.edu.tlu.nhom9.qltv.Taonv.Singup"
+        android:label="Tạo Nhân Viên"
+        tools:layout="@layout/singup_activity" />
+    <fragment
+        android:id="@+id/nav_doimk"
+        android:name="vn.edu.tlu.nhom9.qltv.Login.DoiPass"
+        android:label="Đổi Mật Khẩu"
+        tools:layout="@layout/doipass_fragment" />
+
+</navigation>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">QLTV</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Quản Lý Sách</string>
+    <string name="menu_gallery">Quản Lý Thể Loại Sách</string>
+    <string name="menu_slideshow">Quản Lý Thành Viên</string>
+    <string name="menu_Phieu">Quản Lý Phiếu Mượn</string>
+    <string name="add_book_type_description">Thêm loại sách mới</string>
+    <string name="list_of_book_types_description">Danh sách các loại sách</string>
+    <string name="add_loan_slip_description">Thêm phiếu mượn mới</string>
+    <string name="list_of_loan_slips_description">Danh sách các phiếu mượn</string>
+    <string name="add_member_description">Thêm thành viên mới</string>
+    <string name="list_of_members_description">Danh sách thành viên</string>
+    <string name="add_book_description">Thêm sách mới</string>
+    <string name="list_of_books_description">Danh sách các cuốn sách</string>
+    <string name="add_user_description">Thêm người dùng mới</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
